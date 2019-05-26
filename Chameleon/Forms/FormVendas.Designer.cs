@@ -39,10 +39,10 @@
             this.dtVendas.AllowUserToOrderColumns = true;
             this.dtVendas.AllowUserToResizeRows = false;
             this.dtVendas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtVendas.Location = new System.Drawing.Point(73, 51);
+            this.dtVendas.Location = new System.Drawing.Point(58, 51);
             this.dtVendas.Name = "dtVendas";
             this.dtVendas.RowTemplate.Height = 24;
-            this.dtVendas.Size = new System.Drawing.Size(1014, 530);
+            this.dtVendas.Size = new System.Drawing.Size(1059, 551);
             this.dtVendas.TabIndex = 0;
             // 
             // FormVendas
@@ -51,11 +51,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1182, 656);
             this.Controls.Add(this.dtVendas);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
             this.Name = "FormVendas";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Chameleon -  Vendas";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormVendas_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.dtVendas)).EndInit();
             this.ResumeLayout(false);
 

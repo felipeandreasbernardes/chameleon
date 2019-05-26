@@ -19,5 +19,10 @@ namespace Chameleon
             source.DataSource = pedidos;
             dtVendas.DataSource = source;
         }
+
+        private void FormVendas_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
