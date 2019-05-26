@@ -51,7 +51,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\AuthRepository.cs" />
     <Compile Include="Data\PedidoVendaRepository.cs" />
+    <Compile Include="Forms\FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormVendas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -59,8 +66,12 @@
       <DependentUpon>FormVendas.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\PedidoVenda.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormVendas.resx">
       <DependentUpon>FormVendas.cs</DependentUpon>
     </EmbeddedResource>

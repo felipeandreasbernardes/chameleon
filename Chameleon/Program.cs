@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Chameleon.Forms;
+using System;
 using System.Windows.Forms;
 
 namespace Chameleon
@@ -16,7 +14,7 @@ namespace Chameleon
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormVendas());
+            Application.Run(new FormLogin());
         }
     }
 }
