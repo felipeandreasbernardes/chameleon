@@ -23,12 +23,12 @@ namespace Chameleon.Data
                 "SUM(soi.paid_price) as Total, " +
                 "CONCAT(c.first_name, ' ', c.last_name) as Nome " +
             "FROM " +
-                 "giovan30_chameleon.sales_order so " +
+                 "sales_order so " +
             "LEFT JOIN " +
-                 "giovan30_chameleon.sales_order_item soi " +
+                 "sales_order_item soi " +
                  "ON soi.fk_sales_order = so.id_sales_order " +
             "LEFT JOIN " +
-                 "giovan30_chameleon.customer c " +
+                 "customer c " +
                  "ON c.id_customer = so.fk_customer " +
             "WHERE " +
                   "so.fk_store = 1 " +
